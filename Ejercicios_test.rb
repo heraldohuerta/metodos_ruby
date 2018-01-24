@@ -44,10 +44,10 @@ puts '*********************Ejercicio 4***********************************'
 puts '*******************************************************************'
 
 def saludo(saludo)
-  return saludo == 'Hola' ? "Hola Mundo" : "Hola #{saludo}"
+puts "Hola Mundo"  if saludo == 'Hola'
 end
-puts saludo('Hola')
-puts saludo('Heraldo')
+saludo('Hola')
+saludo('Heraldo')
 puts "\n\n"
 
 ### Ejercicio 5
