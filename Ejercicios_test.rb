@@ -115,7 +115,7 @@ puts "\n\n"
 # 3. Crear un método que devuelva un arreglo con la cantidad de caracteres que tiene cada nombre.
 puts '3. Crear un método que devuelva un arreglo con la cantidad de caracteres que tiene cada nombre.'
 
-def caracter_arr(curso = [])
+def caracter_arr(curso)
 cant_car = []
 curso.each{ |nombre| cant_car << [nombre,nombre.length] }
 return cant_car
