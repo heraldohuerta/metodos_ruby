@@ -22,7 +22,7 @@ puts '*******************************************************************'
 def random?
     result = [true, false].sample
 end
-puts (random?) ? 'si' : 'no'
+puts random? ? 'si' : 'no'
 puts "\n\n"
 
 
@@ -58,9 +58,9 @@ puts '*******************************************************************'
 def pares(num1,num2)
   arr = []
   for i in num1..num2  do  arr.push(i) end
-  return arr.select { |x| x.even? }
+  puts arr.select { |x| x.even? }
 end
-puts pares(2,10)
+pares(2,10)
 puts "\n\n"
 
 ### Ejercicio 6
@@ -123,9 +123,3 @@ end
 resultado = caracter_arr(curso)
 puts "\n\n"
 resultado.each{ |cantidad| puts "#{cantidad}"}
-
-
-
-def porc?(porc) porc >=0 && porc <= 100 end
-
-puts  porc?(a)
