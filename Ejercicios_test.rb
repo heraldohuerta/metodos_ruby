@@ -22,8 +22,7 @@ puts '*******************************************************************'
 def random?
     result = [true, false].sample
 end
-valor = random?
-puts valor  == true ? 'si' : (valor  == false ? 'no' : 'error' )
+puts (random?) ? 'si' : 'no'
 puts "\n\n"
 
 
@@ -124,3 +123,9 @@ end
 resultado = caracter_arr(curso)
 puts "\n\n"
 resultado.each{ |cantidad| puts "#{cantidad}"}
+
+
+
+def porc?(porc) porc >=0 && porc <= 100 end
+
+puts  porc?(a)
