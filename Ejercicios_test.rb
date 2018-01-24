@@ -62,7 +62,7 @@ def pares(num1,num2)
 end
 puts "Ingrese Valores uno positivos y enteros"
 valor = gets.chomp.split(' ').map(&:to_i)
-pares(*valor) if valor.all?(&:positive?)
+pares(*valor) if valor.all?(&:positive?)  && !valor.empty?
 puts "\n\n"
 
 ### Ejercicio 6
@@ -75,9 +75,9 @@ def draw_line(size)
 end
 
 def draw_lines(size)
-  size.times { puts draw_line(size) }
+  size.times { draw_line(size) }
 end
-draw_lines(10)
+puts draw_lines(10)
 puts "\n\n"
 
 ### Ejercicio 7
