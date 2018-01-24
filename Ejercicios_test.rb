@@ -60,7 +60,9 @@ def pares(num1,num2)
   for i in num1..num2  do  arr.push(i) end
   puts arr.select { |x| x.even? }
 end
-pares(2,10)
+puts "Ingrese Valores uno positivos y enteros"
+valor = gets.chomp.split(' ').map(&:to_i)
+pares(*valor) if valor.all?(&:positive?)
 puts "\n\n"
 
 ### Ejercicio 6
@@ -99,14 +101,14 @@ puts '*********************Ejercicio 8***********************************'
 puts '*******************************************************************'
 puts "\n\n"
 curso =['Hugo Fuchslocher','Felipe Andrés Mahana Palomer','Luis Rodríguez Peña','Claudio Daza de la Parra','Adrian Tapia Silva','Patricia Vera','Yannick Michel Brionne Delgado','Fernanda Jara Galleguillos','Franco Benedetti','Felipe Andrés Urtubia ','Heraldo Andrés Huerta Aravena','Arturo Duarte','Milenko Castillo','Daniel Yañez Avila','Daniel Fuentes','Ignacio Alfonso Troncoso Barra','Kevin Matias Francisco Lucero Gomez','Norman Alejandro Castro Flores','Roberto Galaz','Patricio Venegas Leiva','Matias Exequiel Rojas Espinoza']
-
+puts "\n\n"
 # 1. Imprimir todos los elementos que excedan más de 5 caracteres.
 puts '# 1. Imprimir todos los elementos que excedan más de 5 caracteres.'
 curso.each{ |nombre| puts nombre if nombre.length > 5 }
 puts "\n\n"
 
 # 2. Crear un arreglo nuevo con todos los elementos en minúscula.
-puts '2. Crear un arreglo nuevo con todos los elementos en minúscula.'
+puts '2. Crear un arreglo nuevo concant_car = [] todos los elementos en minúscula.'
 nuevo = []
 curso.each{ |nombre| nuevo.push(nombre.downcase) }
 print nuevo
