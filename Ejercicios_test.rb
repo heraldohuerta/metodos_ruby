@@ -71,13 +71,13 @@ puts '*********************Ejercicio 6***********************************'
 puts '*******************************************************************'
 
 def draw_line(size)
-   '*' * size
+  puts '*' * size
 end
 
 def draw_lines(size)
   size.times { draw_line(size) }
 end
-puts draw_lines(10)
+draw_lines(10)
 puts "\n\n"
 
 ### Ejercicio 7
@@ -100,7 +100,7 @@ puts '*******************************************************************'
 puts '*********************Ejercicio 8***********************************'
 puts '*******************************************************************'
 puts "\n\n"
-curso =['Hugo Fuchslocher','Felipe Andrés Mahana Palomer','Luis Rodríguez Peña','Claudio Daza de la Parra','Adrian Tapia Silva','Patricia Vera','Yannick Michel Brionne Delgado','Fernanda Jara Galleguillos','Franco Benedetti','Felipe Andrés Urtubia ','Heraldo Andrés Huerta Aravena','Arturo Duarte','Milenko Castillo','Daniel Yañez Avila','Daniel Fuentes','Ignacio Alfonso Troncoso Barra','Kevin Matias Francisco Lucero Gomez','Norman Alejandro Castro Flores','Roberto Galaz','Patricio Venegas Leiva','Matias Exequiel Rojas Espinoza']
+curso =['Hugo','Felipe','Luis','Claudio','Adrian','Patricia','Yannick','Fernanda','Franco','Felipe','Heraldo','Arturo','Milenko','Daniel','Daniel','Ignacio','Kevin','Norman','Roberto','Patricio','Matias']
 puts "\n\n"
 # 1. Imprimir todos los elementos que excedan más de 5 caracteres.
 puts '# 1. Imprimir todos los elementos que excedan más de 5 caracteres.'
